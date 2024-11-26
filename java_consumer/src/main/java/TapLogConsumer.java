@@ -2,15 +2,10 @@ import org.tap4j.consumer.TapConsumerFactory;
 import org.tap4j.model.TestResult;
 import org.tap4j.consumer.TapConsumer;
 import org.tap4j.consumer.TapConsumerException;
+import org.tap4j.model.TestSet;
 import org.tap4j.util.StatusValues;
 
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.List;
-import java.util.Scanner;
-
-import org.tap4j.model.TestSet;
-import org.tap4j.util.StatusValues;
 
 public class TapLogConsumer {
 
