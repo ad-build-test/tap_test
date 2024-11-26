@@ -1,4 +1,5 @@
 #include <tap++/tap++.h>
+#include <iostream>
 #include <string>
 
 int foo() {
@@ -10,9 +11,10 @@ std::string bar() {
 }
 
 int main() {
-  tap::plan(3);
-  tap::ok(true, "This test passes");
-  tap::is(foo(), 1, "foo() should be 1");
-  tap::is(bar(), "a string", "bar() should be \"a string\"");
-  return exit_status();
+  TAP::plan(3);
+  TAP::ok(true, "This test passes");
+  std::cout << "Testing to see if this line breaks the parser\n";
+  TAP::is(foo(), 1, "foo() should be 1");
+  TAP::is(bar(), "a string", "bar() should be \"a string\"");
+  return TAP::exit_status();
 }
