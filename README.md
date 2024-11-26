@@ -42,3 +42,7 @@ one more to mention thats not on the list
 1. c++ - [Catch2](https://github.com/catchorg/Catch2/blob/devel/docs/ci-and-misc.md#top) popular c++ testing framework which has more than just pass/fail
 
 I used [this c++ producer library](https://github.com/cbab/libtappp) - for simple prototyping
+
+## Consumer libraries
+Since there is only one consumer/parser (build system backend) and its in java, I used [this java consumer library](https://tupilabs.com/tap4j/tap4j/tapconsumer.html)
+
