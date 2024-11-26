@@ -21,7 +21,7 @@ pnispero@PC100942:~/tap_test$ cd java_consumer/ && ./gradlew run
 > Task :run
 Number of tests found: 3
 Any failure? true
-Test Summary: Passed 2 of 3 tests
+Test Summary: Passed 2 of 3 tests (66%)
 [Incubating] Problems report is available at: file:///home/pnispero/tap_test/java_consumer/build/reports/problems/problems-report.html
 
 Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
@@ -30,7 +30,7 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.11/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 518ms
-2 actionable tasks: 2 executed
+BUILD SUCCESSFUL in 1s
+2 actionable tasks: 1 executed, 1 up-to-date
 pnispero@PC100942:~/tap_test/java_consumer$
 ```
