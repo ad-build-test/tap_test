@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral() // Repository to resolve dependencies
+}
+
+dependencies {
+    // Add the tap4j dependency for TAP parsing
+    implementation 'org.tap4j:tap4j:4.4.2'
+}
+
+task run(type: JavaExec) {
+    main = 'TapLogConsumer' // The class that contains the main method
+    classpath = sourceSets.main.runtimeClasspath
+}
