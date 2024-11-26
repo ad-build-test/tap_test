@@ -37,16 +37,6 @@ public class TapLogConsumer {
         System.out.println( "Number of tests found: " + testSet.getNumberOfTestResults() );
         System.out.println( "Any failure? " + testSet.containsNotOk() );
         printTestSummary(testSet);
-        // // Print details of each test
-        // for (TestResult test : tests) {
-        //     System.out.println("Test Name: " + test.getDescription());
-        //     System.out.println("Test Result: " + (test.isOk() ? "Passed" : "Failed"));
-            
-        //     // If the test failed, print the error message (if present)
-        //     if (!test.isOk()) {
-        //         System.out.println("  Error Message: " + test.getFailureMessage());
-        //     }
-        // }
     }
 
     // Method to generate and print test summary
@@ -62,7 +52,8 @@ public class TapLogConsumer {
         }
 
         // Output the summary in the form "passed n of m tests"
-        System.out.println("Test Summary: Passed " + passedTests + " of " + totalTests + " tests");
+        int passedPercent = (int) Math.floor(((double) passedTests / totalTests) * 100);
+        System.out.println("Test Summary: Passed " + passedTests + " of " + totalTests + " tests (" + passedPercent + "%)");
     }
 
 }

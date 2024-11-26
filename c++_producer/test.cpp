@@ -1,8 +1,6 @@
 #include <tap++/tap++.h>
 #include <string>
 
-using namespace TAP;
-
 int foo() {
   return 2;
 }
@@ -12,9 +10,9 @@ std::string bar() {
 }
 
 int main() {
-  plan(3);
-  ok(true, "This test passes");
-  is(foo(), 1, "foo() should be 1");
-  is(bar(), "a string", "bar() should be \"a string\"");
+  tap::plan(3);
+  tap::ok(true, "This test passes");
+  tap::is(foo(), 1, "foo() should be 1");
+  tap::is(bar(), "a string", "bar() should be \"a string\"");
   return exit_status();
 }
