@@ -34,3 +34,11 @@ BUILD SUCCESSFUL in 1s
 2 actionable tasks: 1 executed, 1 up-to-date
 pnispero@PC100942:~/tap_test/java_consumer$
 ```
+
+## Producer libraries
+Almost all languages are supported - [libraries](https://testanything.org/producers.html)
+
+one more to mention thats not on the list
+1. c++ - [Catch2](https://github.com/catchorg/Catch2/blob/devel/docs/ci-and-misc.md#top) popular c++ testing framework which has more than just pass/fail
+
+I used [this c++ producer library](https://github.com/cbab/libtappp) - for simple prototyping
